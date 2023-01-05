@@ -24,6 +24,10 @@ body {
     background: #fff;
     /* font-family: 'Roboto', sans-serif; */
 }
+h2{
+    color:#141414;
+    font-weight: 600;
+}
 
 .nav {
     background: #000000;
@@ -31,7 +35,7 @@ body {
     color: #fff;
     width: 100%;
     height: 80px;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .nav__logo {
@@ -58,15 +62,17 @@ body {
     grid-auto-flow: column;
     gap: 15px;
 }
+
 .nav__items {
     color: #fff;
     text-decoration: none;
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-.nav__items::after{
+
+.nav__items::after {
     content: "";
     display: block;
-    background:#fff ;
+    background: #fff;
     font-weight: 300;
     font-size: 24;
     width: 90%;
@@ -75,23 +81,25 @@ body {
     clip-path: var(--clippy);
     transition: .2s;
 }
+
 .nav__items:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 1% 100%);
-    
+
 }
-/* .nav__label:checked + .nav__menu{
-    background: #c7a5a5;
-} */
-.nav__label, .nav__input {
+
+.nav__label,
+.nav__input {
     display: none;
 }
+
 #hero__container {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, #000, #141414);
+    /* background: #000; */
     gap: 15px;
 }
 
@@ -106,12 +114,18 @@ body {
     color: #fff;
     font-weight: 100;
     font-size: 18px;
+    justify-content: center;
     text-align: center;
 }
 
 #hero__container h3 {
     color: #fff;
     gap: 5px;
+}
+.hero-text h4{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .hero-img {
@@ -133,30 +147,50 @@ body {
     margin-bottom: 20px;
     padding: 25px;
 }
-
 .articulos {
-    margin: 0 auto;
+     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-items: flex-start;
-    align-items: center;
-    gap: 15px;
-    width: 70%;
-    background: linear-gradient(to bottom, var(--pantoneBlue), var(--pantoneBlue));
-    font-size: 18px;
-    color: #B1B3B3;
+    column-gap: 10px;
+    justify-content:center;
+    width: 100%;
+    /* background: linear-gradient(to bottom, var(--pantoneBlue), var(--pantoneBlue)); */
+    /* background: var(--pantone); */
+    font-size: 14px;
+    color:#272727;
     font-weight: 200;
-    font-size: 18px;
-    border-radius: 1rem;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    padding: 15px;
-    -webkit-box-shadow: 0px 5px 20px 0px rgba(19, 0, 124, 0.54);
-    -moz-box-shadow: 0px 5px 20px 0px rgba(48, 9, 139, 0.54);
-    box-shadow: 0px 5px 20px 0px rgba(9, 1, 78, 0.54);
+    text-align:left;
+    /* border-radius: 1rem; */
+    /* margin-top: 5px; */
+    /* margin-bottom: 50px; */
+     padding: 5px 20px; 
+    /* -webkit-box-shadow: 0px 5px 15px 0px rgba(19, 0, 124, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(48, 9, 139, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(9, 1, 78, 0.54); */
 
 }
+.articos2{
+    width: 50%;
+    background: #ebebeb;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: rgb(49, 49, 49);
+    text-align: left;
+ }
+ .articos2 h2 {
+    justify-content: center;
+    align-items: center;
+ }
+.article__img1{
+   display: flex;
+   justify-items: center;
+   width: 100%;
+}
 
+.article2__img{
+    height: 200px;
+    gap:20px;
+}
 /* .sombra {
     -webkit-box-shadow: 0px 5px 15px 0px rgb(112 112 112 / 54%);
     -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
@@ -165,12 +199,12 @@ body {
     border-radius: 1rem;
 } */
 
-.sideArticle {
+.sombra {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: flex-start;
+    align-items: center;
     gap: 5px;
     width: 90%;
     background: #fff;
@@ -181,10 +215,14 @@ body {
     border-radius: 1rem;
     margin-top: 25px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 30px;
     -webkit-box-shadow: 0px 5px 20px 0px rgba(77, 76, 76, 0.54);
     -moz-box-shadow: 0px 5px 20px 0px rgba(75, 74, 74, 0.54);
     box-shadow: 0px 5px 20px 0px rgba(46, 46, 46, 0.54);
+}
+
+.img__side {
+    size: 100px;
 }
 
 footer {
@@ -192,6 +230,8 @@ footer {
     margin-top: 20px;
     padding: 30px;
     justify-items: center;
+    align-items: center;
+
 }
 
 footer p {
@@ -201,4 +241,12 @@ footer p {
     font-size: 12px;
     align-items: center;
     text-align: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
