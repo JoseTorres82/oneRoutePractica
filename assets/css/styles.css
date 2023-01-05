@@ -36,12 +36,24 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    text-align: center;
+    color: #fff;   
  }
 .container img {
     margin: 0 auto;
     width: 250px;
 
+ }
+.container h6 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: light;
+
+ }
+.container h4 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
  }
 .nav {
     background: #000000;
@@ -117,13 +129,13 @@ h2{
     
     gap: 5px;
 }
-
-#hero__container {
+/* 
+#hero__container h4{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 48px;
-}
+} */
 
 #hero__container p {
     color: #fff;
@@ -131,17 +143,18 @@ h2{
     font-size: 20px;
     justify-content: center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 #hero__container h3 {
     color: #fff;
     gap: 5px;
 }
-.hero-text h4{
+/* .hero-text h4{
     justify-content: center;
     text-align: center;
     width: 100%;
-}
+} */
 /*  
 .container .hero-img {
     height: 50px;
