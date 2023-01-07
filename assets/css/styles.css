@@ -28,13 +28,14 @@ body {
 
 h2 {
     color: #141414;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding-bottom:0;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,22 +164,27 @@ h2 {
     text-align: center;
     width: 100%;
 } */
- 
+
 .container .clima {
     width: 100%;
     margin-bottom: 0;
 
-} 
+}
+
+.cards {
+    max-width: 1000px;
+}
 
 #contenedor__articles {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
-    column-gap: 35px;
+    align-items: top;
+    column-gap: 20px;
     width: 95%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 25px;
 }
 
@@ -189,8 +195,6 @@ h2 {
     column-gap: 10px;
     justify-content: center;
     width: 100%;
-    /* background: linear-gradient(to bottom, var(--pantoneBlue), var(--pantoneBlue)); */
-    /* background: var(--pantone); */
     font-size: 14px;
     color: #272727;
     font-weight: 200;
@@ -206,32 +210,46 @@ h2 {
 }
 
 .articos2 {
-    width: 50%;
-    background: #ebebeb;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    /* background: #ebebeb; */
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: rgb(49, 49, 49);
     text-align: center;
     margin: 5px;
     border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .articos2 h2 {
     justify-content: center;
     align-items: center;
-
+    font-size: 24px;
+    font-style: light;
 }
+.articos2 p {
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 14px;
+    font-style: light;
+}
+
 .articos2 img {
     justify-content: center;
     align-items: center;
-    width: 180px;
-
+    height: 80px;
 }
 
 .article__img1 {
     display: flex;
     justify-items: center;
-    width: 90%;
+    width: 80%;
 }
 
 .article2__img {
