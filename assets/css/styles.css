@@ -26,6 +26,14 @@ body {
     /* font-family: 'Roboto', sans-serif; */
 }
 
+hr {
+    display: block;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
 h2 {
     color: #141414;
     font-weight: 400;
@@ -38,6 +46,7 @@ h2 {
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -186,6 +195,7 @@ h2 {
     margin-top: 20px;
     /* margin-bottom: 20px; */
     padding: 25px;
+
 }
 
 .articulos {
@@ -199,44 +209,49 @@ h2 {
     color: #272727;
     font-weight: 200;
     text-align: left;
-    /* border-radius: 1rem; */
-    /* margin-top: 5px; */
-    /* margin-bottom: 50px; */
+    border-radius: 5px;
     padding: 5px 20px;
-    /* -webkit-box-shadow: 0px 5px 15px 0px rgba(19, 0, 124, 0.54);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(48, 9, 139, 0.54);
-    box-shadow: 0px 5px 15px 0px rgba(9, 1, 78, 0.54); */
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(19, 0, 124, 0.54);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(48, 9, 139, 0.54);
+    box-shadow: 0px 5px 10px 0px rgba(9, 1, 78, 0.54);
 
+}
+
+.articulos h2 {
+    font-weight: 600;
+    width: 100%;
+    justify-items: center;
 }
 
 .articos2 {
     max-width: 900px;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     row-gap: 20px;
-    /* background: #ebebeb; */
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: rgb(49, 49, 49);
     text-align: center;
-    margin: 5px;
-    border-radius: 5px;
     padding: 20px;
-    gap: 20px;
+    justify-content: center;
+    /*     gap: 20px; */
 }
+
 
 .articos2 h2 {
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 30px;
     font-style: light;
 }
+
 .articos2 p {
     justify-items: center;
     align-items: center;
-    text-align: justify;
-    font-size: 14px;
+    text-align: center;
+    font-size: 24px;
     font-style: light;
 }
 
@@ -244,6 +259,28 @@ h2 {
     justify-content: center;
     align-items: center;
     height: 80px;
+}
+
+.container__contacBtn {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container__contacBtn .btn__contacto a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container__contacBtn .btn__contacto {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background: #141414;
 }
 
 .article__img1 {
@@ -292,6 +329,41 @@ h2 {
     width: 90%;
 }
 
+.info__container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: top;
+    column-gap: 20px;
+    width: 95%;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+.titulo__info {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px; 
+    color:#141414;  
+}
+.info__container img {
+    height: 200px;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.info__container a {
+    text-decoration: none;
+    color: #141414;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: bold;
+}
+.info__container p{
+ text-align: justify;
+}
 footer {
     background-color: #000;
     margin-top: 20px;
